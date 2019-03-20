@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class Coin extends Component {
     render () {
-        let imgageSrc = { imgUrl: this.props.imgURL };
+        let imgageSrc = { imgUrl: this.props.imgURL }
         return (
             <div className="Coin">
                 <img src={imgageSrc} alt="coin-face"></img> 
