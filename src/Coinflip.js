@@ -3,18 +3,16 @@ import Coin from './Coin';
 
 class CoinFlip extends Component {
     static defaultProps = {
-        title: "Let's flip a coin!",
+        //[0]head [1]tail
         imgUrls: [
-            "https://s3.amazonaws.com/ngccoin-production/us-coin-explorer/4326181-007o.jpg",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZFutdSbZOKsEb5l7BvGdQavsbmOs8JWqv2zHTzsImwMZeiJRZvg"
+            "https://bjc.edc.org/June2017/bjc-r/img/5-algorithms/img_flipping-a-coin/Heads.png",
+            "http://forums.previously.tv/applications/core/interface/imageproxy/imageproxy.php?img=https://images-na.ssl-images-amazon.com/images/I/51NyMaKLydL.jpg&key=8068e143105d13e26ee58ff1f1117be31f7451cca7cd8aa1a7ed392cc8b3c12a"
         ]
     }
 
     constructor(props) {
         super(props);
-        this.state = {
-            coinImg: ""
-        }
+        this.state = { coinImg: "http://cerc.net/_bopwp/wp-content/uploads/2013/12/158737094.jpg" };
         this.handleClick = this.handleClick.bind(this);
     }
     
@@ -32,8 +30,8 @@ class CoinFlip extends Component {
     render () {
         return (
             <div className="CoinFlip">
-                <h3>{this.title}</h3>
-                <Coin imgageSrc={this.state.coinImg}/>
+                <h3>Let's flip a coin!</h3>
+                <Coin imgUrl={this.state.coinImg}/>
                 <button className="CoinFlip-flip" onClick={this.handleClick}>Flip Meeee</button>
             </div>
         )

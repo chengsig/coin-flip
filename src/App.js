@@ -4,9 +4,7 @@ import CoinFlip from './Coinflip';
 
 class App extends Component {
   render() {
-    return (
-      <CoinFlip />
-    );
+    return <CoinFlip/>
   }
 }
 

@@ -1,11 +1,11 @@
 import React, { Component } from "react";
+import './Coin.css';
 
 class Coin extends Component {
     render () {
-        let imgageSrc = { imgUrl: this.props.imgURL }
         return (
             <div className="Coin">
-                <img src={imgageSrc} alt="coin-face"></img> 
+                <img className="Coin-img" src={this.props.imgUrl} alt="coin-face"></img> 
             </div>
         )
     }
